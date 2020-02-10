@@ -1,0 +1,46 @@
+<HTML>
+<head>
+<link rel ="stylesheet" type = "text/css" href = "index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function ShowMenu() {
+  var x = document.getElementById("myNav");
+  if (x.className === "NavBar") {
+    x.className += " responsive";
+  } else {
+    x.className = "NavBar";
+  }
+}
+</script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> <!-- Font-->
+<title>Webstie Frame</title>
+</head>
+
+<body>
+    <div class ="Frame">
+    <div class="Header">
+
+        <div id = "logo">Logo</div>
+        <div id = "PgName">Page Name Goes Here</div>
+
+    </div>
+    <div class = "NavBar" id =myNav>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowMenu()">&#9776;</a>
+        <a href = "Account.html">Account</a><br>
+        <a href = "Gallery.html">Gallery</a><br>
+        <a href = "Gallery.html">Upgrades</a><br>
+        <a href = "Gallery.html">Sign out</a><br>
+    </div>
+
+    <div class ="content">
+        
+
+     </div>
+    </div>
+</body>
+
+
+</HTML>
