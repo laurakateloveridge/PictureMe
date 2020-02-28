@@ -1,5 +1,5 @@
-
 body {
+font-family: Arial, Helvetica, sans-serif;
 
 }
 table,th,td {
@@ -13,26 +13,29 @@ th,td {
 .Header{
     font: 200 30px/1.5 'Pacifico', Helvetica, sans-serif;
     color: #2b2b2b;
-   
-
     width:100%;
-    height:10%;
-    background-color: #748B99;
+    height:17%;
+    background-color: rgb(209, 209, 209);
+    display:block;
 }
 #PgName{
     text-align: center;
+    align-self: center;
+    margin-right: 30%;
  
 }
 #logo{
+    margin-top: 5px;
+    height :auto;
+    width :auto;
     float:left;
-    margin-left: 10px;
-    margin-top: 10px;
+  
     
   
 }
 .NavBar{
     float: left;
-    background-color: #748B99;
+    background-color: white;
 }
 .NavBar a {
     float: left;
@@ -54,8 +57,42 @@ position:relative;
     float: Left;
     display: block;
 }
+.NavBar a:hover{
+    background-color: rgb(209, 209, 209);
+}
 .NavBar.responsive a {
     float: none;
     display: block;
     text-align: left;
+}
+
+#AlbumPreviews{
+    width: 95%;
+    height: 100%;
+    padding: 14px 16px;
+    border-radius:50px;
+    
+}
+
+#Add{
+    width: 5%;
+    height: 5%;
+    font-size: xx-large;
+    padding: 14px 16px;
+    border-radius:50px;
+    background-color: rgba(219, 218, 218, 0.884);
+    margin-left: 40%;
+    
+
+
+}
+#PreviewImg{
+    
+    width:20%;
+    height:98%;
+    background-color:rgba(209, 209, 209, 0.89);
+    margin-left: 20px;
+    float:left;
+    
+    
 }

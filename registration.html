@@ -1,0 +1,105 @@
+<HTML>
+<head>
+<link rel ="stylesheet" type = "text/css" href = "index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+function ShowMenu() {
+  var x = document.getElementById("myNav");
+  if (x.className === "NavBar") {
+    x.className += " responsive";
+  } else {
+    x.className = "NavBar";
+  }
+}
+</script>
+
+
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> <!-- Font-->
+<title>Picture Me - Register</title>
+
+<script>
+  function validateForm() {
+    // var x = document.forms["registerForm"]["firstname"].value;
+    // if (x == null || x == "") {
+    //   alert("First name must be filled out");
+    //   return false;
+    // }
+
+  var p1 = document.forms["registerForm"]["pass1"].value;
+  var p2 = document.forms["registerForm"]["pass2"].value;
+  if(p1!=p2) {
+    alert("Passwords do not match!");
+    return false;
+  }
+}
+
+</script>
+</head>
+
+<body>
+    <div class ="Frame">
+    <div class="Header">
+
+        <div id = "logo">Logo</div>
+        <div id = "PgName">Register</div>
+
+    </div>
+    <div class = "NavBar" id =myNav>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowMenu()">&#9776;</a>
+        <a href = "Account.html">Account</a><br>
+        <a href = "Gallery.html">Gallery</a><br>
+        <a href = "Gallery.html">Upgrades</a><br>
+        <a href = "Gallery.html">Sign out</a><br>
+    </div>
+
+    <div class ="content">
+     
+<h3>Register to Join</h3>
+<table width="400" border="0" cellpadding="0">
+<form action="mailto:xxxxx@xxxxx.com" method="post" name="registerForm" onsubmit="validateForm()">
+<tr>
+<td><label class="field" for="username">Username:</label></td>
+<td><input type="text" required id="username" oninvalid="alert('You must fill out the form!');"></td>
+</tr>
+<tr>
+<td><label class="field" for="firstname">First Name:</label></td>
+<td><input type="text" required id="firstname" oninvalid="alert('You must fill out the form!');"></td>
+</tr>
+<tr>
+<td><label class="field" for="lastname">Last Name:</label></td>
+<td><input type="text" required id="lastname"></td>
+</tr>
+<tr>
+<td><label class="field" for="address">E-mail:</label></td>
+<td><input type="email" required id="address"></td>
+</tr>
+<tr>
+<td><label class="field" for="address">Date of Birth:</label></td>
+ <td><input type="date" required max="2016-01-01" min="1900-01-01"
+size="30" maxlength="60"></td>
+</tr>
+<tr>
+<td><label class="field">Gender:</label></td>
+<td><label><input type="radio" name="gender" value="male"> male</label>
+<label><input type="radio" name="gender" value="female"> female</label></td>
+</tr>
+<tr>
+<td><label class="field">Create Password:</label></td>
+<td><label><input type="password" required name="pass1"></label></td>
+</tr>
+<tr>
+<td><label class="field">Re-type Password:</label></td>
+<td><input type="password" required name="pass2"></td>
+</tr>
+<tr>
+<td><input  type="submit" value="Submit"></td>
+</tr>
+</form>
+</table>
+</div>
+     </div>
+    </div>
+</body>
+
+</HTML>
