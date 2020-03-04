@@ -38,11 +38,10 @@ function ShowMenu() {
 </head>
 
 <body>
-    <div class ="Frame">
     <div class="Header">
 
-        <div id = "logo">Logo</div>
-        <div id = "PgName">Register</div>
+        <div id = "logo"><img src="logo.png"></div>
+        <div id = "PgName">Picture Me</div>
 
     </div>
     <div class = "NavBar" id =myNav>
@@ -53,53 +52,47 @@ function ShowMenu() {
         <a href = "Gallery.html">Sign out</a><br>
     </div>
 
+
     <div class ="content">
-     
-<h3>Register to Join</h3>
-<table width="400" border="0" cellpadding="0">
-<form action="mailto:xxxxx@xxxxx.com" method="post" name="registerForm" onsubmit="validateForm()">
+<div class="login-page">
+
+  <div class="form">
+    <form class="login-form" action="mailto:xxxxx@xxxxx.com" method="post" name="registerForm" onsubmit="validateForm()">
 <tr>
-<td><label class="field" for="username">Username:</label></td>
-<td><input type="text" required id="username" oninvalid="alert('You must fill out the form!');"></td>
+<td><input type="text" required id="username" placeholder="username" oninvalid="alert('You must fill out the form!');"></td>
 </tr>
 <tr>
-<td><label class="field" for="firstname">First Name:</label></td>
-<td><input type="text" required id="firstname" oninvalid="alert('You must fill out the form!');"></td>
+<td><input type="text" required id="firstname" placeholder="first name" oninvalid="alert('You must fill out the form!');"></td>
 </tr>
 <tr>
-<td><label class="field" for="lastname">Last Name:</label></td>
-<td><input type="text" required id="lastname"></td>
+<td><input type="text" required id="lastname" placeholder="last name" oninvalid="alert('You must fill out the form!');"></td>
 </tr>
 <tr>
-<td><label class="field" for="address">E-mail:</label></td>
-<td><input type="email" required id="address"></td>
+<td><input type="email" required id="address" placeholder="e-mail address" oninvalid="alert('You must fill out the form!');"></td>
 </tr>
 <tr>
-<td><label class="field" for="address">Date of Birth:</label></td>
  <td><input type="date" required max="2016-01-01" min="1900-01-01"
 size="30" maxlength="60"></td>
 </tr>
 <tr>
-<td><label class="field">Gender:</label></td>
-<td><label><input type="radio" name="gender" value="male"> male</label>
-<label><input type="radio" name="gender" value="female"> female</label></td>
+<td><label><input type="password" required name="pass1" placeholder="create password"></label></td>
 </tr>
 <tr>
-<td><label class="field">Create Password:</label></td>
-<td><label><input type="password" required name="pass1"></label></td>
+<td><input type="password" required name="pass2" placeholder="re-type password"></td>
 </tr>
 <tr>
-<td><label class="field">Re-type Password:</label></td>
-<td><input type="password" required name="pass2"></td>
-</tr>
-<tr>
-<td><input  type="submit" value="Submit"></td>
+<td><button>Submit</button></td>
 </tr>
 </form>
-</table>
+    </form>
+  </div>
+
 </div>
-     </div>
+  <div class="Footer">
+        <div id="copyright">© Copyright Picture Me 2020</div>
+
     </div>
+
 </body>
 
 </HTML>

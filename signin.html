@@ -1,60 +1,33 @@
 <HTML>
 <head>
-<link rel ="stylesheet" type = "text/css" href = "index.css">
+<link rel ="stylesheet" type = "text/css" href = "signin.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-function ShowMenu() {
-  var x = document.getElementById("myNav");
-  if (x.className === "NavBar") {
-    x.className += " responsive";
-  } else {
-    x.className = "NavBar";
-  }
-}
-</script>
-
-
 <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> <!-- Font-->
+
 <title>Picture Me - Sign In</title>
 </head>
 
 <body>
-    <div class ="Frame">
     <div class="Header">
-
-        <div id = "logo">Logo</div>
-        <div id = "PgName">Sign In or Register</div>
+        <div id="logo"><img src="logo.png"></div>
+        <div id="PgName">Picture Me</div>
 
     </div>
-    <div class = "NavBar" id =myNav>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="ShowMenu()">&#9776;</a>
-        <a href = "Account.html">Account</a><br>
-        <a href = "Gallery.html">Gallery</a><br>
-        <a href = "Gallery.html">Upgrades</a><br>
-        <a href = "Gallery.html">Sign out</a><br>
-    </div>
+<div class="login-page">
 
-    <div class ="content">
-        
-
-     </div>
-    </div>
-</body>
-
-<h3>Sign In</h3>
-
+  <div class="form">
     <form class="login-form">
       <input type="text" placeholder="username"/>
       <input type="password" placeholder="password"/>
       <button>login</button>
+      <p class="message">Forgot Password? <a href="passwordreset.html">Reset here</a></p>
       <p class="message">Not registered? <a href="registration.html">Create an account</a></p>
-      <p class="message">Forgot password? <a href="passwordreset.html">Reset password</a></p>
     </form>
   </div>
-</div>
 
+  <div class="Footer">
+        <div id="copyright">© Copyright Picture Me 2020</div>
 
-</div>
+    </div>
 
 </HTML>
